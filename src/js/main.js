@@ -107,11 +107,10 @@ clearingBtn.addEventListener('click', () => {
         let cardContainer = card.parentElement
         let mainCard = cardContainer.parentElement
 
-
         if (card.classList.contains('hiden')) {
             card.style.display = "flex";
             mainCard.classList.remove('hiden');
-        } else {
+        }else {
             setTimeout(function () {
                 clearingBtn.style.color = "red"
             }, 0000);
