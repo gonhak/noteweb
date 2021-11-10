@@ -1,19 +1,12 @@
+// Animations File
+@import '_animations.scss';
+
 // Color variables
 
-    // Dark Theme
-    $mainColor : #333;
-    $elementsColor : #F4FDFF;
-    $accentColor : #79e5fc;
-
-    // Note for Light and Dark website Theme:
-        // Light
-            // MAIN : #F4FDFF
-            // ELEMENTS : #333
-            // ACCENT : #79e5fc
-        // Dark 
-            // MAIN : #333
-            // ELEMENTS : #F4FDFF
-            // ACCENT : #79e5fc
+// Dark Theme
+$mainColor : #333;
+$elementsColor : #F4FDFF;
+$accentColor : #00d0ff;
 
 // General website styles
 
@@ -33,21 +26,48 @@ body {
     width: 100vw;
     position: relative;
     background-color: $mainColor;
+    overflow-x: hidden;
+}
+
+input {
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-family: 'Grechen Fuemen', cursive;
+    font-weight: bold;
+    text-align: center;
+    color: $elementsColor;
+    border: 1px solid $elementsColor;
+    box-shadow: 0px 0px 10px inset $elementsColor;
+    background-color: $mainColor;
+    transition: box-shadow .6s;
+
+    &:focus {
+        border: 1px solid $accentColor;
+        outline: none;
+        box-shadow: 0px 0px 10px inset $accentColor;
+    }
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 // Imports
-    // Navigition Styles
-        // Mobile
-        @import 'nav/_mobileNav.scss';
-        // Desktop
-        @import 'nav/_desktopNav.scss';
+// Navigition Styles
+// Mobile
+@import 'nav/_mobileNav.scss';
+// Desktop
+@import 'nav/_desktopNav.scss';
 
-    // Main
-        // Mobile
+// Main
+// Mobile
 
-        // Desktop
-    
-    // Footer
-        // Mobile
+// Desktop
 
-        // Desktop
+// Footer
+// Mobile
+
+// Desktop
