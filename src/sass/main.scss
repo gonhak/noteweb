@@ -5,6 +5,7 @@
 
 // Dark Theme
 $mainColor : #333;
+$secondaryColor : #222;
 $elementsColor : #F4FDFF;
 $accentColor : #00d0ff;
 
@@ -56,18 +57,18 @@ input {
 }
 
 // Imports
-// Navigition Styles
-// Mobile
-@import 'nav/_mobileNav.scss';
-// Desktop
-@import 'nav/_desktopNav.scss';
+    // Navigition Styles
+        // Mobile
+            @import 'nav/_mobileNav.scss';
+        // Desktop
+            @import 'nav/_desktopNav.scss'; 
 
-// Main
-// Mobile
+    // Main
+        // Mobile
 
-// Desktop
+        // Desktop
 
-// Footer
-// Mobile
+    // Footer
+        // Mobile
 
-// Desktop
+        // Desktop
