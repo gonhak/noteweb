@@ -1,0 +1,35 @@
+Cl      1A    D/M
+
+Cl  - class
+1A  - class identifier
+D/M   - desktop
+
+#Pierwsze Klasy
+
+Cl1AD	Cl1AM
+Cl1BD 	Cl1BM
+Cl1CD	Cl1CM
+Cl1DD	Cl1DM
+
+#Drugie Klasy
+
+Cl2AD	Cl2AM 
+Cl2BD	Cl2BM
+Cl2CD	Cl2CM
+Cl2DD	Cl2DM
+
+#Trzecie Klasy
+
+Cl3AD	Cl3AM
+Cl3BD	Cl3BM
+Cl3CD	Cl3CM
+Cl3DD	Cl3DM
+Cl3ED	Cl3EM
+Cl3FD	Cl3FM
+Cl3GD	Cl3GM
+
+#Czwarte Klasy
+
+Cl4AD	Cl4AM
+Cl4BD	Cl4BM
+Cl4CD	Cl4CM
