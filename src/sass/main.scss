@@ -1,6 +1,3 @@
-// Animations File
-@import '_animations.scss';
-
 // Color variables
 
 // Dark Theme
@@ -23,7 +20,6 @@ html {
 }
 
 body {
-    min-height: 210vh;
     width: 100vw;
     position: relative;
     background-color: $mainColor;
@@ -50,25 +46,88 @@ input {
     }
 }
 
+.logo {
+    font-weight: bold;
+    color: $elementsColor;
+    font-family: 'Grechen Fuemen',
+        cursive;
+    font-size: 2.2rem;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px $elementsColor;
+    transition: text-shadow .6s, color .6s;
+
+    &:focus {
+        outline: none;
+        text-shadow: 0px 0px 5px $elementsColor;
+        color: $accentColor;
+    }
+
+    &:focus span {
+        color: $secondaryColor;
+    }
+
+    span {
+        color: $accentColor;
+        transition: color .6s;
+    }
+}
+
 .flexCenter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.highlightedText {
+    font-family: Grechen Fuemen,
+    cursive;
+    color: $accentColor;
+    text-shadow: 0px 0px 10px $secondaryColor;
+}
+
+.highlightedText--Desktop {
+    font-size: 2.4rem;
+}
+
+.highlightedText--Mobile {
+    font-size: 1.6rem;
+}
+
+@media(min-width:768px){
+    .mobileElement {
+        visibility: hidden;
+    }
+}
+
+@media(max-width:768px){
+    .desktopElement {
+        visibility: hidden;
+    }
+}
+
+@media(min-width:768px){
+    .desktopElement {
+        visibility: visible;
+    }
+}
+
 // Imports
-    // Navigition Styles
-        // Mobile
-            @import 'nav/_mobileNav.scss';
-        // Desktop
-            @import 'nav/_desktopNav.scss'; 
 
-    // Main
-        // Mobile
+// Navigition Styles
 
-        // Desktop
+// Mobile
+@import 'nav/_mobileNav.scss';
+// Desktop
+@import 'nav/_desktopNav.scss';
 
-    // Footer
-        // Mobile
+// Main
 
-        // Desktop
+// Mobile
+@import 'main/_mobileMain.scss';
+// Desktop
+@import 'main/_desktopMain.scss';
+
+// Footer
+// Mobile
+
+// Desktop
