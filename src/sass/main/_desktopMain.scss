@@ -1,14 +1,5 @@
 .main {
     &__container__desktop {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: calc(100vw - 150px);
-        min-height: calc(110vh - 75px);
 
         &__popup {
             position: fixed;

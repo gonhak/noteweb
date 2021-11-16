@@ -1,14 +1,5 @@
 .main {
     &__container__mobile {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-        position: absolute;
-        left: 0;
-        top: 75px;
-        width: 100%;
-        min-height: calc(100vh - 75px);
 
         &__classCard {
             box-sizing: content-box;

@@ -1,0 +1,117 @@
+.main {
+    &__desktop {
+        &__subject {
+            margin: 2em;
+            display: none;
+            width: 350px;
+            height: 500px;
+            border-radius: 25px;
+            border: 1px solid $elementsColor;
+            box-shadow: 0px 0px 25px black;
+            overflow: hidden;
+
+            &__logo {
+                width: 100%;
+                height: 25%;
+                box-shadow: 0px 0px 35px inset black;
+                border-bottom: 1px solid $elementsColor;
+
+                &__icon {
+                    color: #222;
+                    font-size: 3.5rem;
+                    text-shadow: 0px 0px 15px $accentColor;
+                    animation: rgbSubjectIcon 5s ease infinite alternate;
+                    transition:text-shadow .6s;
+
+                    &:nth-child(2) {
+                        animation-delay: 2.5s;
+                    }
+                }
+            }
+
+            &__header {
+                width: 100%;
+                height: 20%;
+
+                &__h2 {
+                    font-family: Grechen Fuemen,
+                        cursive;
+                    font-size: 2.5rem;
+                    color: $elementsColor;
+                    text-shadow: 0px 0px 15px black;
+                }
+            }
+
+            &__text {
+                width: 100%;
+                height: 30%;
+
+                &__p {
+                    width: 85%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    font-family: 'Montserrat',
+                        sans-serif;
+                    color: $elementsColor;
+                }
+            }
+
+            &__enterBtn {
+                width: 100%;
+                height: 25%;
+
+                &__btn {
+                    width: 100px;
+                    height: 50px;
+                    border-radius: 25px;
+                    border: 1px solid $elementsColor;
+                    background: transparent;
+                    box-shadow: 0px 0px 15px inset black;
+                    text-decoration: none;
+
+                    &__icon {
+                        color: $elementsColor;
+                        font-size: 1.6rem;
+                        text-shadow: 0px 0px 15px black;
+                        transition: text-shadow .6s,
+                            color .6s;
+                    }
+
+                    &:visited {
+                        color: transparent;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    &:focus .learnIcon,
+                    &:hover .learnIcon {
+                        text-shadow: 0px 0px 15px $elementsColor;
+                        color: $secondaryColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .main {
+        &__desktop {
+            &__subject {
+                display: block;
+            }
+        }
+    }
+}
+
+@keyframes rgbSubjectIcon{
+    0%{
+        text-shadow: 0px 0px 15px #00d0ff;
+    }
+
+    100% {
+        text-shadow: 0px 0px 15px #ff00f2;
+    }
+}

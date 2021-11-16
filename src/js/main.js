@@ -39,6 +39,8 @@ const navColapseMobile = () => {
         navIcon.style.transform = "rotate(-180deg)";
         navigation.style.bottom = "0";
     };
+
+    searchMobileInput.setAttribute('placeholder', "Podaj swoją klasę...");
 };
 
 // Quiting popup
@@ -51,6 +53,8 @@ const quitingPopup = () => {
         popup.style.opacity = "0";
         popup.style.zIndex = "-10";
     };
+
+    searchDesktopInput.setAttribute('placeholder', "Podaj swoją klasę...");
 };
 
 // showing popup
@@ -125,16 +129,19 @@ const showingMobileResults = () => {
                 if (correctInputValue[1].match(classletter12RegExp)) {
                     showingAndHiddingClasses();
                     insideNavCollapseHide();
+                    searchMobileInput.setAttribute('placeholder', "Podaj swoją klasę...");
                 };
             } else if (correctInputValue[0].match(classNumber3RegExp)) {
                 if (correctInputValue[1].match(classletter3RegExp)) {
                     showingAndHiddingClasses();
                     insideNavCollapseHide();
+                    searchMobileInput.setAttribute('placeholder', "Podaj swoją klasę...");
                 };
             } else if (correctInputValue[0].match(classNumber4RegExp)) {
                 if (correctInputValue[1].match(classletter4RegExp)) {
                     showingAndHiddingClasses();
                     insideNavCollapseHide();
+                    searchMobileInput.setAttribute('placeholder', "Podaj swoją klasę...");
                 };
             } else {
                 searchMobileInput.setAttribute('placeholder', "Spróbuj ponownie...");
@@ -194,16 +201,19 @@ const showingDesktopResults = () => {
                 if (correctInputValue[1].match(classletter12RegExp)) {
                     showingAndHiddingClasses();
                     quitingPopup();
+                    searchDesktopInput.setAttribute('placeholder', "Podaj swoją klasę...");
                 };
             } else if (correctInputValue[0].match(classNumber3RegExp)) {
                 if (correctInputValue[1].match(classletter3RegExp)) {
                     showingAndHiddingClasses();
                     quitingPopup();
+                    searchDesktopInput.setAttribute('placeholder', "Podaj swoją klasę...");
                 };
             } else if (correctInputValue[0].match(classNumber4RegExp)) {
                 if (correctInputValue[1].match(classletter4RegExp)) {
                     showingAndHiddingClasses();
                     quitingPopup();
+                    searchDesktopInput.setAttribute('placeholder', "Podaj swoją klasę...");
                 };
             } else {
                 searchDesktopInput.setAttribute('placeholder', "Spróbuj ponownie...");

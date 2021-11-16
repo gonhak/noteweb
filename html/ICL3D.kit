@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klasa 3D</title>
+    <!-- Ikona strony -->
+    <link rel="icon"
+        href="dist\img\book.png">
+    <!-- Ikony -->
+    <script src="https://kit.fontawesome.com/4edfb60331.js" crossorigin="anonymous"></script>
+    <!-- Czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Grechen+Fuemen&family=Montserrat:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="dist\css\main.min.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <!-- @include '_desktopNavigation.kit' -->
+        <!-- @include '_mobileNavigation.kit' -->
+    </nav>
+
+    <main class="main">
+        <!-- Desktop subjects -->
+        <div class="main__desktop desktopElement">
+
+            <!-- Informatyka -->
+
+            <div class="main__desktop__subject">
+                <div class="main__desktop__subject__logo flexCenter">
+                    <i class="fas fa-keyboard main__desktop__subject__logo__icon"></i>
+                </div>
+                
+                <div class="main__desktop__subject__header flexCenter">
+                    <h2 class="main__desktop__subject__header__h2">Informatyka</h2>
+                </div>
+                
+                <div class="main__desktop__subject__text flexCenter">
+                    <p class="main__desktop__subject__text__p">W tej sekcji znajdziesz niezbędne notatki z lekcji informatyki. Znajdziesz tam równierz notatki z kursów na temat Pythona, które mogą ci pomóc zrozumieć lepiej temat bądź nauczyć się czegoś nowego.</p>
+                </div>
+                
+                <div class="main__desktop__subject__enterBtn flexCenter">
+                    <a class="main__desktop__subject__enterBtn__btn flexCenter" href="#">
+                        <i class="fas fa-book main__desktop__subject__enterBtn__btn__icon learnIcon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sieci Komputerowe -->
+
+            <div class="main__desktop__subject">
+                <div class="main__desktop__subject__logo flexCenter">
+                    <i class="fas fa-network-wired main__desktop__subject__logo__icon"></i>
+                </div>
+                
+                <div class="main__desktop__subject__header flexCenter">
+                    <h2 class="main__desktop__subject__header__h2">Sieci Komputerowe</h2>
+                </div>
+                
+                <div class="main__desktop__subject__text flexCenter">
+                    <p class="main__desktop__subject__text__p">W tej sekcji znajdziesz niezbędne notatki z lekcji Administrowania Sieciami Komputerowymi, które mogą ci pomóc zrozumieć lepiej temat bądź nauczyć się czegoś nowego.</p>
+                </div>
+                
+                <div class="main__desktop__subject__enterBtn flexCenter">
+                    <a class="main__desktop__subject__enterBtn__btn flexCenter disabledLink" href="#">
+                        <i class="fas fa-book main__desktop__subject__enterBtn__btn__icon learnIcon"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Windows -->
+
+            <div class="main__desktop__subject">
+                <div class="main__desktop__subject__logo flexCenter">
+                    <i class="fab fa-suse main__desktop__subject__logo__icon"></i>
+                </div>
+                
+                <div class="main__desktop__subject__header flexCenter">
+                    <h2 class="main__desktop__subject__header__h2">Linux</h2>
+                </div>
+                
+                <div class="main__desktop__subject__text flexCenter">
+                    <p class="main__desktop__subject__text__p">W tej sekcji znajdziesz niezbędne notatki z lekcji Administrowania Systemem Linux, które mogą ci pomóc zrozumieć lepiej temat bądź nauczyć się czegoś nowego.</p>
+                </div>
+                
+                <div class="main__desktop__subject__enterBtn flexCenter">
+                    <a class="main__desktop__subject__enterBtn__btn flexCenter disabledLink" href="#">
+                        <i class="fas fa-book main__desktop__subject__enterBtn__btn__icon learnIcon"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Mobile subjects -->
+        <div class="main__mobile mobileElement">
+
+        </div>
+    </main>
+
+    <script src="dist\js\main.min.js"></script>
+    <script>
+        const homeLogoBtnIndex = document.querySelector('.nav__container__desktop__logoBox__logo');
+        const homeBtnIndex = document.querySelector('.nav__container__desktop__menu__button--home');
+
+        homeLogoBtnIndex.setAttribute('href', "index.html");
+        homeBtnIndex.setAttribute('href', "index.html");
+    </script>
+</body>
+
+</html>

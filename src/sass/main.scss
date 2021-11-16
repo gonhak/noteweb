@@ -27,6 +27,30 @@ body {
     overflow-x: hidden;
 }
 
+.main__desktop{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100vw - 150px);
+    min-height: calc(100vh - 75px);
+}
+
+.main__mobile{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    width: 100%;
+    min-height: calc(100vh - 75px);
+}
+
 input {
     padding: 0.5em 1em;
     border-radius: 25px;
@@ -124,11 +148,17 @@ input {
 // Main
 
 // Mobile
-@import 'main/_mobileMain.scss';
-// Desktop
-@import 'main/_desktopMain.scss';
+        @import 'main/_mobileMain.scss';
+    // Desktop
+        @import 'main/_desktopMain.scss';
 
-// Footer
-// Mobile
+// Subjects
+    // Mobile
+        @import 'subjects/_mobileSubjectMain.scss';
+    // Desktop
+        @import 'subjects/_desktopSubjectMain.scss';
 
-// Desktop
+.disabledLink{
+    pointer-events: none;
+    opacity: 0.5;
+}
