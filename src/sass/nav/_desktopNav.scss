@@ -58,18 +58,16 @@
                     transition: text-shadow .6s;
                 }
 
-                &:focus {
+                &:focus,
+                &:hover {
                     border: 1px solid $accentColor;
                     box-shadow: 0px 0px 10px inset $accentColor;
                     outline: none;
                 }
 
-                &:focus i {
+                &:focus i,
+                &:hover i {
                     text-shadow: 0px 0px 10px $accentColor;
-                }
-
-                &:hover {
-                    opacity: 1;
                 }
             }
         }

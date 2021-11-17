@@ -1,39 +1,25 @@
 .main {
-    &__desktop {
-        &__subject {
+
+    &__desktop, &__mobile {
+        
+        &__note {
             margin: 2em;
             display: none;
             width: 350px;
-            height: 500px;
+            height: 450px;
             border-radius: 25px;
             border: 1px solid $elementsColor;
             box-shadow: 0px 0px 25px black;
             overflow: hidden;
 
-            &__logo {
-                width: 100%;
-                height: 25%;
-                box-shadow: 0px 0px 35px inset black;
-                border-bottom: 1px solid $elementsColor;
-
-                &__icon {
-                    color: #222;
-                    font-size: 3.5rem;
-                    text-shadow: 0px 0px 15px $accentColor;
-                    animation: rgbSubjectIcon 5s ease infinite alternate;
-                    transition:text-shadow .6s;
-
-                    &:nth-child(2) {
-                        animation-delay: 2.5s;
-                    }
-                }
-            }
-
             &__header {
                 width: 100%;
-                height: 20%;
+                height: 25%;
+                border-bottom: 1px solid $elementsColor;
+                box-shadow: 0px 0px 25px inset black;
 
                 &__h2 {
+                    text-align: center;
                     font-family: Grechen Fuemen,
                         cursive;
                     font-size: 2.5rem;
@@ -44,7 +30,7 @@
 
             &__text {
                 width: 100%;
-                height: 30%;
+                height: 35%;
 
                 &__p {
                     width: 85%;
@@ -56,13 +42,34 @@
                 }
             }
 
+            &__info{
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 15%;
+
+                &__author, &__date{
+                    width: 85%;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    font-family: 'Montserrat',
+                    sans-serif;
+                    color: #777;
+
+                    span{
+                        color: #666;
+                    }
+                }
+            }
+
             &__enterBtn {
+                justify-content: space-evenly;
                 width: 100%;
                 height: 25%;
 
                 &__btn {
-                    width: 100px;
-                    height: 50px;
+                    width: 75px;
+                    height: 45px;
                     border-radius: 25px;
                     border: 1px solid $elementsColor;
                     background: transparent;
@@ -85,8 +92,8 @@
                         outline: none;
                     }
 
-                    &:focus .learnIcon,
-                    &:hover .learnIcon {
+                    &:focus .learnIcon--Active,
+                    &:hover .learnIcon--Active {
                         text-shadow: 0px 0px 15px $elementsColor;
                         color: $secondaryColor;
                     }
@@ -99,15 +106,25 @@
 @media(min-width:768px) {
     .main {
         &__desktop {
-            &__subject {
+            &__note {
                 display: block;
             }
         }
     }
 }
 
-@keyframes rgbSubjectIcon{
-    0%{
+@media(max-width:768px) {
+    .main {
+        &__mobile {
+            &__note {
+                display: block;
+            }
+        }
+    }
+}
+
+@keyframes rgbSubjectIcon {
+    0% {
         text-shadow: 0px 0px 15px #00d0ff;
     }
 

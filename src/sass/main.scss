@@ -27,7 +27,7 @@ body {
     overflow-x: hidden;
 }
 
-.main__desktop{
+.main__desktop {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -39,7 +39,7 @@ body {
     min-height: calc(100vh - 75px);
 }
 
-.main__mobile{
+.main__mobile {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -105,7 +105,7 @@ input {
 
 .highlightedText {
     font-family: Grechen Fuemen,
-    cursive;
+        cursive;
     color: $accentColor;
     text-shadow: 0px 0px 10px $secondaryColor;
 }
@@ -118,19 +118,19 @@ input {
     font-size: 1.6rem;
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
     .mobileElement {
         visibility: hidden;
     }
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
     .desktopElement {
         visibility: hidden;
     }
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
     .desktopElement {
         visibility: visible;
     }
@@ -148,17 +148,19 @@ input {
 // Main
 
 // Mobile
-        @import 'main/_mobileMain.scss';
-    // Desktop
-        @import 'main/_desktopMain.scss';
+@import 'main/_mobileMain.scss';
+// Desktop
+@import 'main/_desktopMain.scss';
 
 // Subjects
-    // Mobile
-        @import 'subjects/_mobileSubjectMain.scss';
-    // Desktop
-        @import 'subjects/_desktopSubjectMain.scss';
+// General
+@import 'subjects/_SubjectMain.scss';
+// Notes
+// General
+@import 'notes/_mainNotes.scss';
 
-.disabledLink{
+
+.disabledLink {
     pointer-events: none;
-    opacity: 0.5;
+    opacity: 0.35;
 }
