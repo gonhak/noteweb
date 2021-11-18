@@ -30,9 +30,35 @@
         <!-- Desktop subjects -->
         <div class="main__desktop desktopElement">
 
+            <div class="main__desktop__popup">
+                <div class="main__desktop__popup__container">
+                    <button class="main__desktop__popup__container__quit">
+                        <i class="fas fa-times"></i>
+                    </button>
+
+                    <div class="main__desktop__popup__container__searchingTools">
+                        <input type="Date"
+                            class="main__desktop__popup__container__searchingTools__input searchDesktopInput">
+
+                        <div class="main__desktop__popup__container__searchingTools__buttons">
+                            <button
+                                class="DesktopSearchBtn main__desktop__popup__container__searchingTools__buttons__button main__desktop__popup__container__searchingTools__buttons__button--search">
+                                <i class="fas fa-search search"></i>
+                            </button>
+
+                            <button
+                                class="DesktopTrashBtn main__desktop__popup__container__searchingTools__buttons__button main__desktop__popup__container__searchingTools__buttons__button--clear">
+                                <i class="fas fa-trash clear"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <!-- Variables -->
 
-            <div class="main__desktop__note">
+            <div class="main__desktop__note" id="DD3D1E"> 
                 <div class="main__desktop__note__header flexCenter">
                     <h2 class="main__desktop__note__header__h2">Zmienne</h2>
                 </div>
@@ -43,8 +69,8 @@
                 </div>
 
                 <div class="main__desktop__note__info flexCenter">
-                    <p class="main__desktop__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__desktop__note__info__date"><span>Data lekcji: </span>17.09.2021r.</p>
+                    <p class="main__desktop__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__desktop__note__info__date"><span class="span">Data lekcji: </span><span id="DD3D1S">17.09.2021</span></p>
                 </div>
 
                 <div class="main__desktop__note__enterBtn flexCenter">
@@ -71,7 +97,7 @@
 
             <!-- Functions -->
 
-            <div class="main__desktop__note">
+            <div class="main__desktop__note" id="DD3D2E">
                 <div class="main__desktop__note__header flexCenter">
                     <h2 class="main__desktop__note__header__h2">Funkcje</h2>
                 </div>
@@ -82,8 +108,8 @@
                 </div>
 
                 <div class="main__desktop__note__info flexCenter">
-                    <p class="main__desktop__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__desktop__note__info__date"><span>Data lekcji: </span>24.09.2021r.</p>
+                    <p class="main__desktop__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__desktop__note__info__date"><span class="span">Data lekcji: </span><span id="DD3D2S">24.09.2021</span></p>
                 </div>
 
                 <div class="main__desktop__note__enterBtn flexCenter">
@@ -104,18 +130,19 @@
 
             <!-- Logical Operators -->
 
-            <div class="main__desktop__note">
+            <div class="main__desktop__note" id="DD3D3E">
                 <div class="main__desktop__note__header flexCenter">
                     <h2 class="main__desktop__note__header__h2">Operatory Logiczne</h2>
                 </div>
 
                 <div class="main__desktop__note__text flexCenter">
-                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat opratorów logicznych wykorzystywanych w Pythonie.</p>
+                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat opratorów
+                        logicznych wykorzystywanych w Pythonie.</p>
                 </div>
 
                 <div class="main__desktop__note__info flexCenter">
-                    <p class="main__desktop__note__info__author"><span>Autor: </span>Mateusz Kozieł</p>
-                    <p class="main__desktop__note__info__date"><span>Data lekcji: </span>1.10.2021r.</p>
+                    <p class="main__desktop__note__info__author"><span class="span">Autor: </span>Mateusz Kozieł</p>
+                    <p class="main__desktop__note__info__date"><span class="span">Data lekcji: </span><span id="DD3D3S">1.10.2021</span></p>
                 </div>
 
                 <div class="main__desktop__note__enterBtn flexCenter">
@@ -136,18 +163,19 @@
 
             <!-- Word Index's -->
 
-            <div class="main__desktop__note">
+            <div class="main__desktop__note" id="DD3D4E">
                 <div class="main__desktop__note__header flexCenter">
                     <h2 class="main__desktop__note__header__h2">Indexy Wyrazów</h2>
                 </div>
 
                 <div class="main__desktop__note__text flexCenter">
-                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat indeksowania słów w Pythonie</p>
+                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat indeksowania
+                        słów w Pythonie</p>
                 </div>
 
                 <div class="main__desktop__note__info flexCenter">
-                    <p class="main__desktop__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__desktop__note__info__date"><span>Data lekcji: </span>19.10.2021r.</p>
+                    <p class="main__desktop__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__desktop__note__info__date"><span class="span">Data lekcji: </span><span id="DD3D4S">19.10.2021</span></p>
                 </div>
 
                 <div class="main__desktop__note__enterBtn flexCenter">
@@ -168,18 +196,19 @@
 
             <!-- Changing variables types -->
 
-            <div class="main__desktop__note">
+            <div class="main__desktop__note" id="DD3D5E">
                 <div class="main__desktop__note__header flexCenter">
                     <h2 class="main__desktop__note__header__h2">Rzutowanie</h2>
                 </div>
 
                 <div class="main__desktop__note__text flexCenter">
-                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat rzutowania zmiennych w Pythonie.</p>
+                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat rzutowania
+                        zmiennych w Pythonie.</p>
                 </div>
 
                 <div class="main__desktop__note__info flexCenter">
-                    <p class="main__desktop__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__desktop__note__info__date"><span>Data lekcji: </span>22.10.2021r.</p>
+                    <p class="main__desktop__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__desktop__note__info__date"><span class="span">Data lekcji: </span><span id="DD3D5S">22.10.2021</span></p>
                 </div>
 
                 <div class="main__desktop__note__enterBtn flexCenter">
@@ -200,18 +229,19 @@
 
             <!-- Inputs -->
 
-            <div class="main__desktop__note">
+            <div class="main__desktop__note" id="DD3D6E">
                 <div class="main__desktop__note__header flexCenter">
                     <h2 class="main__desktop__note__header__h2">Inputy</h2>
                 </div>
 
                 <div class="main__desktop__note__text flexCenter">
-                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat input'ów w Pythonie.</p>
+                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat input'ów w
+                        Pythonie.</p>
                 </div>
 
                 <div class="main__desktop__note__info flexCenter">
-                    <p class="main__desktop__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__desktop__note__info__date"><span>Data lekcji: </span>29.10.2021r.</p>
+                    <p class="main__desktop__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__desktop__note__info__date"><span class="span">Data lekcji: </span><span id="DD3D6S">29.10.2021</span></p>
                 </div>
 
                 <div class="main__desktop__note__enterBtn flexCenter">
@@ -237,46 +267,46 @@
 
             <!-- Variables -->
 
-            <div class="main__desktop__note">
-                <div class="main__desktop__note__header flexCenter">
-                    <h2 class="main__desktop__note__header__h2">Zmienne</h2>
+            <div class="main__mobile__note" id="MD3D1E">
+                <div class="main__mobile__note__header flexCenter">
+                    <h2 class="main__mobile__note__header__h2">Zmienne</h2>
                 </div>
 
-                <div class="main__desktop__note__text flexCenter">
-                    <p class="main__desktop__note__text__p">W tej notatce znajdziesz informacje na temat zmiennych w
+                <div class="main__mobile__note__text flexCenter">
+                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat zmiennych w
                         Pythonie.</p>
                 </div>
 
-                <div class="main__desktop__note__info flexCenter">
-                    <p class="main__desktop__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__desktop__note__info__date"><span>Data lekcji: </span>17.09.2021r.</p>
+                <div class="main__mobile__note__info flexCenter">
+                    <p class="main__mobile__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__mobile__note__info__date"><span class="span">Data lekcji: </span><span id="MD3D1S">17.09.2021</span></p>
                 </div>
 
-                <div class="main__desktop__note__enterBtn flexCenter">
+                <div class="main__mobile__note__enterBtn flexCenter">
 
                     <!-- Google Drive -->
 
-                    <a class="main__desktop__note__enterBtn__btn flexCenter">
-                        <i class="fas fa-book main__desktop__note__enterBtn__btn__icon learnIcon disabledLink"></i>
+                    <a class="main__mobile__note__enterBtn__btn flexCenter">
+                        <i class="fas fa-book main__mobile__note__enterBtn__btn__icon learnIcon disabledLink"></i>
                     </a>
 
                     <!-- Word -->
 
-                    <a class="main__desktop__note__enterBtn__btn flexCenter" href="#">
-                        <i class="fas fa-file-word main__desktop__note__enterBtn__btn__icon learnIcon--Active "></i>
+                    <a class="main__mobile__note__enterBtn__btn flexCenter" href="#">
+                        <i class="fas fa-file-word main__mobile__note__enterBtn__btn__icon learnIcon--Active "></i>
                     </a>
 
                     <!-- Pdf soon website -->
 
-                    <a class="main__desktop__note__enterBtn__btn flexCenter">
-                        <i class="fas fa-book main__desktop__note__enterBtn__btn__icon learnIcon disabledLink"></i>
+                    <a class="main__mobile__note__enterBtn__btn flexCenter">
+                        <i class="fas fa-book main__mobile__note__enterBtn__btn__icon learnIcon disabledLink"></i>
                     </a>
                 </div>
             </div>
 
             <!-- Functions -->
 
-            <div class="main__mobile__note">
+            <div class="main__mobile__note" id="MD3D2E">
                 <div class="main__mobile__note__header flexCenter">
                     <h2 class="main__mobile__note__header__h2">Funkcje</h2>
                 </div>
@@ -287,8 +317,8 @@
                 </div>
 
                 <div class="main__mobile__note__info flexCenter">
-                    <p class="main__mobile__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__mobile__note__info__date"><span>Data lekcji: </span>24.09.2021r.</p>
+                    <p class="main__mobile__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__mobile__note__info__date"><span class="span">Data lekcji: </span><span id="MD3D2S">24.09.2021</span></p>
                 </div>
 
                 <div class="main__mobile__note__enterBtn flexCenter">
@@ -309,18 +339,19 @@
 
             <!-- Logical Operators -->
 
-            <div class="main__mobile__note">
+            <div class="main__mobile__note" id="MD3D3E">
                 <div class="main__mobile__note__header flexCenter">
                     <h2 class="main__mobile__note__header__h2">Operatory Logiczne</h2>
                 </div>
 
                 <div class="main__mobile__note__text flexCenter">
-                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat opratorów logicznych wykorzystywanych w Pythonie.</p>
+                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat opratorów
+                        logicznych wykorzystywanych w Pythonie.</p>
                 </div>
 
                 <div class="main__mobile__note__info flexCenter">
-                    <p class="main__mobile__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__mobile__note__info__date"><span>Data lekcji: </span>1.10.2021r.</p>
+                    <p class="main__mobile__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__mobile__note__info__date"><span class="span">Data lekcji: </span><span id="MD3D3S">1.10.2021</span></p>
                 </div>
 
                 <div class="main__mobile__note__enterBtn flexCenter">
@@ -341,18 +372,19 @@
 
             <!-- Word Index's -->
 
-            <div class="main__mobile__note">
+            <div class="main__mobile__note" id="MD3D4E">
                 <div class="main__mobile__note__header flexCenter">
                     <h2 class="main__mobile__note__header__h2">Indexy Wyrazów</h2>
                 </div>
 
                 <div class="main__mobile__note__text flexCenter">
-                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat indeksowania słów w Pythonie</p>
+                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat indeksowania
+                        słów w Pythonie</p>
                 </div>
 
                 <div class="main__mobile__note__info flexCenter">
-                    <p class="main__mobile__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__mobile__note__info__date"><span>Data lekcji: </span>19.10.2021r.</p>
+                    <p class="main__mobile__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__mobile__note__info__date"><span class="span">Data lekcji: </span><span id="MD3D4S">19.10.2021</span></p>
                 </div>
 
                 <div class="main__mobile__note__enterBtn flexCenter">
@@ -373,18 +405,19 @@
 
             <!-- Changing variables types -->
 
-            <div class="main__mobile__note">
+            <div class="main__mobile__note" id="MD3D5E">
                 <div class="main__mobile__note__header flexCenter">
                     <h2 class="main__mobile__note__header__h2">Rzutowanie</h2>
                 </div>
 
                 <div class="main__mobile__note__text flexCenter">
-                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat rzutowania zmiennych w Pythonie.</p>
+                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat rzutowania
+                        zmiennych w Pythonie.</p>
                 </div>
 
                 <div class="main__mobile__note__info flexCenter">
-                    <p class="main__mobile__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__mobile__note__info__date"><span>Data lekcji: </span>22.10.2021r.</p>
+                    <p class="main__mobile__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__mobile__note__info__date"><span class="span">Data lekcji: </span><span id="MD3D5S">22.10.2021</span></p>
                 </div>
 
                 <div class="main__mobile__note__enterBtn flexCenter">
@@ -405,18 +438,19 @@
 
             <!-- Inputs -->
 
-            <div class="main__mobile__note">
+            <div class="main__mobile__note" id="MD3D6E">
                 <div class="main__mobile__note__header flexCenter">
                     <h2 class="main__mobile__note__header__h2">Inputy</h2>
                 </div>
 
                 <div class="main__mobile__note__text flexCenter">
-                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat input'ów w Pythonie.</p>
+                    <p class="main__mobile__note__text__p">W tej notatce znajdziesz informacje na temat input'ów w
+                        Pythonie.</p>
                 </div>
 
                 <div class="main__mobile__note__info flexCenter">
-                    <p class="main__mobile__note__info__author"><span>Autor: </span>Filip Natanek</p>
-                    <p class="main__mobile__note__info__date"><span>Data lekcji: </span>29.10.2021r.</p>
+                    <p class="main__mobile__note__info__author"><span class="span">Autor: </span>Filip Natanek</p>
+                    <p class="main__mobile__note__info__date"><span class="span">Data lekcji: </span><span id="MD3D6S">29.10.2021</span></p>
                 </div>
 
                 <div class="main__mobile__note__enterBtn flexCenter">
@@ -438,15 +472,15 @@
         </div>
     </main>
 
-    <script src="dist\js\main.min.js"></script>
+    <script src="dist\js\noteSystem.min.js"></script>
     <script>
         const homeLogoBtnIndex = document.querySelector('.nav__container__desktop__logoBox__logo');
         const homeBtnIndex = document.querySelector('.nav__container__desktop__menu__button--home');
-        const navNavigation = document.querySelector('.nav__container__mobile__button__collapse');
+        const mobileSearchingInput = document.querySelector('.nav__container__mobile__page__container__input');
 
         homeLogoBtnIndex.setAttribute('href', "index.html");
         homeBtnIndex.setAttribute('href', "index.html");
-        navNavigation.classList.add('disabledLink')
+        mobileSearchingInput.setAttribute('type', "date");
     </script>
 </body>
 
