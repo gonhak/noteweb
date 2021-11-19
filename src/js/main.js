@@ -263,11 +263,3 @@ DesktopFiltrSearchBtn.addEventListener('click', showingDesktopResults);
 DesktopFiltrCleanerBtn.addEventListener('click', cleaningDesktopResults);
 searchMobileInput.addEventListener('keyup', enterFunctionM);
 searchDesktopInput.addEventListener('keyup', enterFunctionD);
-
-// ---------------------------------------------------------------------------------------------
-// Date 
-
-// const copyRightYear = document.querySelector('.nav__container__page__copyright__year');
-
-// const year = new Date().getFullYear();
-// copyRightYear.innerText = year;

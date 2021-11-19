@@ -29,13 +29,6 @@ const DesktopFiltrSearchBtn = document.querySelector('.DesktopSearchBtn');
 const searchDesktopInput = document.querySelector('.searchDesktopInput');
 const searchMobileInput = document.querySelector('.searchMobileInput');
 
-// Arrays For Notes
-
-const desktopNoteDateSpans = [DD3D1S, DD3D2S, DD3D3S, DD3D4S, DD3D5S, DD3D6S];
-const desktopNote = [DD3D1E, DD3D2E, DD3D3E, DD3D4E, DD3D5E, DD3D6E];
-const mobileNoteDateSpans = [MD3D1S, MD3D2S, MD3D3S, MD3D4S, MD3D5S, MD3D6S];
-const mobileNote = [MD3D1E, MD3D2E, MD3D3E, MD3D4E, MD3D5E, MD3D6E];
-
 // Date Formater
 
 const cleaningCardClasses = () => {
